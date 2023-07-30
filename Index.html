@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Learn javaScript</title>
+        
+    </head>
+    <body>
+        <h1>calculater</h1>
+        <div>
+            <input id="val1"/>
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input id="val2"/>
+            <button id="calculate">calculate</button>
+        </div>
+        <div id="display">
+            
+        </div>>
+    </body>
+</html>
+<script>
+    const val1 = document.getElementById("val1")
+    const val2 = document.getElementById("val2")
+    const option = document.getElementById("operator")
+    const btn = document.getElementById("calculate")
+    const display = document.getElementById("display")
+    btn.addEventListener("click", ()=>{
+        let input1 = parseInt(val1.value) 
+        let input2 = parseInt (val2.value)
+        let operator = option.value
+        if(operator == "+"){
+            display.innerHTML = "<h1> ranjith </h1>"
+        }
+        else if(operator == "-"){
+            display.innerText = input1 - input2
+        }
+        else if(operator == "*"){
+            display.innerText = input1 * input2
+        }
+        else if(operator == "/"){
+            display.innerText = input1 / input2
+        }
+    })
+</script>
