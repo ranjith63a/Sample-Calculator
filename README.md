@@ -1,4 +1,4 @@
 # learnjs
 Learn JavaScript 
 
-Simple colculater
+Simple calculator
